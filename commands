@@ -1,0 +1,11 @@
+docker build -t ranger-builds:2.7.0 images/builds \
+  --build-arg RANGER_VERSION=2.7.0
+
+
+docker build -t --no-cache ranger-admin:2.7.0 . \
+  --build-arg RANGER_VERSION=2.7.0
+
+
+docker build -t ranger-usersync:2.7.0 . \
+  --build-arg RANGER_VERSION=2.7.0
+
